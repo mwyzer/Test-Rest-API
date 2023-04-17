@@ -1,11 +1,13 @@
-import express, { Application, Request, Response, NextFunction } from 'express';
+import express, { Application, Request, Response, NextFunction } from 'express'
 
-const app: Application = express();
-const port: Number = 8080;
+const app: Application = express()
+const port: number = 8080
 
-//routing
+// routing
 app.use('/status', (req: Request, res: Response, next: NextFunction) => {
-    res.status(200).send({ status: '200' });
+  res.status(200).send({ status: '200' })
 })
 
-app.listen(port, () => console.log(`Server is listening on port ${port}`));
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`)
+})

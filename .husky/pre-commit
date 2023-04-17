@@ -28,5 +28,6 @@ npm run build ||
 {
     echo "Your build failed, view the errors above"
     false;
-
 }
+
+echo "Success Commit"
